@@ -7,4 +7,6 @@ const myFetchGET = (url) => {
         .then(response => response.json())
 }
 
+
 export { myFetchGET };
+

@@ -2,10 +2,9 @@ import React, { Fragment } from 'react';
 import { getDate } from '../../shared/utils';
 
 const Modal = ({report}) => {
-
+    
     return (
         <Fragment>
-        {console.log(report)}
         <div id="myModal" className="modal">
             <div className="modal-content">
                 <span className="close">&times;</span>

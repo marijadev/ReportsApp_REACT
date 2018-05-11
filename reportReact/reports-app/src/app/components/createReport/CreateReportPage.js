@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Search } from '../../partials/Search';
 import { SingleCandidateCard } from './SingleCandidateCard';
 import { candidateService } from '../../../services/candidateService';
-
+import { Menu } from './Menu';
 class CreateReportPage extends Component {
 	constructor(props) {
 		super(props)
@@ -48,27 +48,7 @@ class CreateReportPage extends Component {
 			<Fragment>
 				<div className="create-report-wrapper">
 					<div className="menu-wrapper">
-						<ul className="menu">
-							<li className="select-candidate-list menu-list">
-								<div className="menu-list-num-holder">
-									<span className="menu-list-num">1</span>
-								</div>
-								Select Candidate
-							</li>
-							<li className="select-company-list menu-list">
-								<div className="menu-list-num-holder">
-									<span className="menu-list-num">2</span>
-								</div>
-								Select Company
-							</li>
-							<li className="report-details-list menu-list">
-								<div className="menu-list-num-holder">
-									<span className="menu-list-num">2</span>
-								</div>
-									Fill Report Details
-							</li>
-							<span className="menu-separator"></span>
-						</ul>
+						<Menu />
 					</div>
 					<div className="create-report-separator"></div>
 					<div className="switch-reports-wrapper">

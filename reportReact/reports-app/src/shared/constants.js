@@ -5,4 +5,6 @@ const URL = {
     companies: "companies/"
 }
 
-export { URL };
+const AVATAR = "http://via.placeholder.com/150x150";
+
+export { URL, AVATAR };

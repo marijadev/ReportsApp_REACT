@@ -18,7 +18,7 @@ class Search extends Component {
     return (
       <Fragment>
         <div className="search-btn-holder">
-            <input id="search-input" type="text" placeholder="Search" onChange={this.handleChange} value={this.state.inputValue} />
+            <input id="search-input" type="text" placeholder="Search Candidates..." onChange={this.handleChange} value={this.state.inputValue} />
         </div>
       </Fragment>
     )

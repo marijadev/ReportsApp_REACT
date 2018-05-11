@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { getDate } from "../../../shared/utils";
-import { Modal } from "../../partials/Modal";
 
 const SingleReport = ({ report, handleSelectReport }) => {
 
@@ -16,7 +15,7 @@ const SingleReport = ({ report, handleSelectReport }) => {
 			modal.style.display = "none";
 		}
 		window.onclick = function (event) {
-			if (event.target == modal) {
+			if (event.target === modal) {
 				modal.style.display = "none";
 			}
 		}

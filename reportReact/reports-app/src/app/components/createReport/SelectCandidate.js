@@ -12,7 +12,7 @@ class SelectCandidate extends Component {
     }
 
     componentDidMount() {
-        console.log(this.getReports());
+        this.getReports();
     }
 
     getReports = () => {
@@ -36,7 +36,7 @@ class SelectCandidate extends Component {
 
     render() {
         const result = this.state.selectedCandidates.length !== 0 ? this.state.selectedCandidates : this.state.candidates;
-        const { selectedCandidates: candidates } = this.state;
+        // const { selectedCandidates: candidates } = this.state;
 
         if (this.state.candidates.length === 0) {
             return <h1>Loading...</h1>

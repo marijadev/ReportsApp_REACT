@@ -202,17 +202,18 @@ header {
     padding: 5px 20px;
 }
 
-
 .switch-reports-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 100%;
 }
 
 .single-candidate-outer-wrapper {
     display: inline-block;
     width: 50%;
+}
+
+.search-holder {
+    display: flex;
+    justify-content: flex-end
 }
 
 .single-candidate-holder {

@@ -17,8 +17,10 @@ class Search extends Component {
   render() {
     return (
       <Fragment>
-        <div className="search-btn-holder">
-            <input id="search-input" type="text" placeholder="Search Candidates..." onChange={this.handleChange} value={this.state.inputValue} />
+        <div className="search-btn-wrapper">
+            <div className="search-btn-holder">
+                <input id="search-input" type="text" placeholder="Search Candidates..." onChange={this.handleChange} value={this.state.inputValue} />
+            </div>
         </div>
       </Fragment>
     )

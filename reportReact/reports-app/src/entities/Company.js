@@ -1,8 +1,8 @@
 class Company {
-    constructor() {
-        this.id = id;
-        this.email = email;
-        this.name = mail;
+    constructor(company) {
+        this.id = company.id;
+        this.email = company.email;
+        this.name = company.name;
     }
 }
 

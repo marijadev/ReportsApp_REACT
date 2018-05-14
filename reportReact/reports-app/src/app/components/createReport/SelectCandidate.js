@@ -7,7 +7,7 @@ class SelectCandidate extends Component {
         super(props)
         this.state = {
             candidates: [],
-            selectedCandidates: []
+            selectedCandidates: [],
         }
     }
 
@@ -36,7 +36,6 @@ class SelectCandidate extends Component {
 
     render() {
         const result = this.state.selectedCandidates.length !== 0 ? this.state.selectedCandidates : this.state.candidates;
-        // const { selectedCandidates: candidates } = this.state;
 
         if (this.state.candidates.length === 0) {
             return <h1>Loading...</h1>
@@ -47,7 +46,7 @@ class SelectCandidate extends Component {
                 <div className="search-holder">
                     <Search searchParams={this.filterCandidates} />
                 </div>
-                {result.map((candidate, index) => <SingleCandidateCard key={index} candidate={candidate} handleSelectReport={this.handleSelectReport}/>)}
+                {result.map((candidate, index) => <SingleCandidateCard key={index} setSelectedCandidate={this.props.setSelectedCandidate} candidate={candidate} handleSelectReport={this.handleSelectReport}/>)}
             </Fragment>
         )
     }

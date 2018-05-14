@@ -163,10 +163,17 @@ header {
 .create-report-navigation {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
 }
 
 .menu-wrapper {
     width: 30%;
+}
+
+.menu-wrapper.candidate-set .menu-list:first-child,
+.menu-wrapper.company-set .menu-list:nth-child(2),
+.menu-wrapper.details-set .menu-list:last-child{
+    color: darkcyan;
 }
 
 .menu {
@@ -194,12 +201,27 @@ header {
 .create-report-btns {
     width:50%;
     text-align: center;
-    margin-top: 30px;
+}
+
+.info-menu {
+    list-style-type: none;
+    padding: 20px;
 }
 
 .create-report-btn {
     width: 40%;
-    padding: 5px 20px;
+    padding: 10px 20px;
+    background-color: darkcyan;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    outline: none;
+    transition: background-color .5s ease;
+    cursor: pointer;
+}
+
+.create-report-btn:hover {
+    background-color: #09b7b7;
 }
 
 .switch-reports-wrapper {
@@ -209,6 +231,7 @@ header {
 .single-candidate-outer-wrapper {
     display: inline-block;
     width: 50%;
+    cursor: pointer;
 }
 
 .search-holder {
@@ -260,4 +283,31 @@ header {
     height: 1px;
     margin: 20px auto 0;
     background-color: black;
+}
+
+.outline {
+    outline: 2px solid darkcyan;
+}
+
+.main-headline {
+    font-size: 100px;
+    color: red;
+}
+
+.search-btn-wrapper::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.companies-ul {
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+.companies-list {
+    display: inline-block;  
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
 }
